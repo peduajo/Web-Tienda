@@ -7,8 +7,12 @@
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo/drawing.png') }}" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </head>
+<style>
+    .slideMarca {display:none;}
+</style>
 <body>
     <div class="container">
         <div class="row" style="background: #e4b9c0;height: 45px">
@@ -46,6 +50,60 @@
                 </nav>
             </div>
         </div>
+        <div class="row" style="margin-bottom: 20px;margin-top: 35px">
+            <div class="col-md-12">
+                <h3 style="font-style: oblique">LO MÁS SALUDABLE PARA TÍ<h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <p>Nuestra opción sobre la salud es incorporar diariamente una alimentación variada y ecológica, acompañada de aquellos complementos que la naturaleza nos brinda y no son agresivos para nuestro organismo. El Herbolario Sol y Tierra abrió por primera vez en 1990, mostrando así nuestra larga experiencia.</p>
+                <p>Disponemos de una selección de artículos de calidad y al mejor precio. Aquí podrás encontrar una gran variedad de alimentos ecológicos, suplementos naturales, plantas medicinales y Bio-cosmética terapeutica.</p> 
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" style="margin-top: 25px;margin-bottom: 25px">
+            <div class="col-md-12" align="center">
+                <img src="{{ url_for('static', filename='imagenes/sobreNosotros1.jpg') }}" width="650" height="350">
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 25px">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <p>La experiencia durante más de 25 años nos ha llevado a conocer a las mejores marcas del mercado para ofrecer a nuestros clientes</p> 
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" align="center">
+                <div class="slider-marcas" style="max-width:750px">
+                    <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila1.png')}}" style="width:100%">
+                    <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila2.png')}}" style="width:100%">
+                    <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila3.png')}}" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <br>
+            <br>
+        </div>
     </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slideMarca");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000); // Cambia cada 2 segundos
+        }
+    </script>
 </body>
 </html>
