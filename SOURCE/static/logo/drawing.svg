@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="drawing.svg">
+   sodipodi:docname="drawing.svg"
+   inkscape:export-filename="/home/edu/Escritorio/WebTienda/SOURCE/static/logo/drawing.png"
+   inkscape:export-xdpi="89"
+   inkscape:export-ydpi="89">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="381.53928"
-     inkscape:cy="303.11609"
+     inkscape:cx="151.72958"
+     inkscape:cy="343.52219"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -76,15 +79,15 @@
     <ellipse
        style="fill:#ffcc00"
        id="path3350-4"
-       cx="364.66504"
-       cy="283.13107"
-       rx="182.33253"
-       ry="83.337585" />
+       cx="365.6752"
+       cy="267.47366"
+       rx="160.10918"
+       ry="145.46196" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot3352-8"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(-58.083784,-43.436537)"><flowRegion
+       transform="matrix(1.1484507,0,0,1.3457848,-113.23911,-179.0881)"><flowRegion
          id="flowRegion3354-1"><rect
            id="rect3356-2"
            width="348.50262"

@@ -3,92 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>¿Quienes somos?</title>
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo/drawing.png') }}" />
+    <title>Contacto</title>
+    <link rel="icon" type="image/gif" href="{{ url_for('static', filename='logo/drawing.ico') }}" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/micss.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </head>
-<style>
-    .slideMarca {display:none;}
-</style>
 <body>
-    <div class="container">
-        <div class="row" style="background: #e4b9c0;height: 45px">
-            <div class="col-md-6" align="center" style="margin-top: 10px">
-                <img src="{{ url_for('static', filename='imagenes/telefonoWeb.png') }}">
-                <b style="font-style: oblique;">  926 21 13 98</b>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" align="center">
+                    <img src="{{ url_for('static', filename='imagenes/telefonoWeb.png') }}">
+                    <b id="telefono">  926 21 13 98</b>
+                </div>
+                <div class="col-md-6" align="center">
+                    <a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}"/>
+                    <a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}"/>
+                </div>
             </div>
-            <div class="col-md-6" align="center" style="margin-top: 10px">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <img id="logoTienda" src="{{ url_for('static', filename='logo/drawing.png') }}"  width="200" height="200">
+                </div>
+            </div>
+            <div class="row">
+                <nav>
+                    <ul class="fancyNav">
+                        <li id="novedades"><a href="{{ url_for('novedades')}}">Novedades</a></li>
+                        <li id="productos"><a href="{{ url_for('productos')}}">Productos</a></li>
+                        <li id="sobreNosotros"><a href="#">¿Quienes somos?</a></li>
+                        <li id="contacto"><a href="{{ url_for('contacto')}}">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1>LO MÁS SALUDABLE PARA TÍ</h1>
+                    <i>Nuestra opción sobre la salud es incorporar diariamente una alimentación variada y ecológica, acompañada de aquellos complementos que la naturaleza nos brinda y no son agresivos para nuestro organismo. El Herbolario Sol y Tierra abrió por primera vez en 1990, mostrando así nuestra larga experiencia.<br><br>Disponemos de una selección de artículos de calidad y al mejor precio. Aquí podrás encontrar una gran variedad de alimentos ecológicos, suplementos naturales, plantas medicinales y Bio-cosmética terapeutica.</i> 
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <img id="imagenSobreNosotros" src="{{ url_for('static', filename='imagenes/sobreNosotros1.jpg') }}" width="650" height="350">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <i>La experiencia durante más de 25 años nos ha llevado a conocer a las mejores marcas del mercado para ofrecer a nuestros clientes</i> 
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <div class="slider-marcas" style="max-width:750px">
+                        <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila1.png')}}" style="width:100%">
+                        <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila2.png')}}" style="width:100%">
+                        <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila3.png')}}" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+                <br>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="col-md-12" align="center">
                 <a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}"/>
                 <a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}"/>
             </div>
         </div>
-        <div class="row" style="margin-bottom: 10px; margin-top: 10px">
-            <div class="col-md-12" align="center">
-                <img src="{{ url_for('static', filename='logo/drawing.png') }}">
-            </div>
-        </div>
-        <div class="row" align="center">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-sm bg-success navbar-dark" style="display: inline-block">
-                    <ul class="navbar-nav">
-                        <li class="nav-item" style="padding-right: 30px;padding-left: 30px">
-                            <a class="nav-link" href="{{ url_for('novedades')}}">Novedades</a>
-                        </li>
-                        <li class="nav-item" style="padding-right: 30px">
-                            <a class="nav-link" href="{{ url_for('productos')}}">Productos</a>
-                        </li>
-                        <li class="nav-item active" style="padding-right: 30px">
-                            <a class="nav-link" href="#">¿Quienes somos?</a>
-                        </li>
-                        <li class="nav-item" style="padding-right: 30px">
-                            <a class="nav-link" href="{{ url_for('contacto')}}">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 20px;margin-top: 35px">
-            <div class="col-md-12">
-                <h3 style="font-style: oblique">LO MÁS SALUDABLE PARA TÍ<h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <p>Nuestra opción sobre la salud es incorporar diariamente una alimentación variada y ecológica, acompañada de aquellos complementos que la naturaleza nos brinda y no son agresivos para nuestro organismo. El Herbolario Sol y Tierra abrió por primera vez en 1990, mostrando así nuestra larga experiencia.</p>
-                <p>Disponemos de una selección de artículos de calidad y al mejor precio. Aquí podrás encontrar una gran variedad de alimentos ecológicos, suplementos naturales, plantas medicinales y Bio-cosmética terapeutica.</p> 
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <div class="row" style="margin-top: 25px;margin-bottom: 25px">
-            <div class="col-md-12" align="center">
-                <img src="{{ url_for('static', filename='imagenes/sobreNosotros1.jpg') }}" width="650" height="350">
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 25px">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <p>La experiencia durante más de 25 años nos ha llevado a conocer a las mejores marcas del mercado para ofrecer a nuestros clientes</p> 
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-12" align="center">
-                <div class="slider-marcas" style="max-width:750px">
-                    <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila1.png')}}" style="width:100%">
-                    <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila2.png')}}" style="width:100%">
-                    <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila3.png')}}" style="width:100%">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <br>
-            <br>
-        </div>
-    </div>
+    </footer>
     <script>
         var myIndex = 0;
         carousel();
