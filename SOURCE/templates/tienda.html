@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contacto</title>
+    <title>Tienda</title>
     <link rel="icon" type="image/gif" href="{{ url_for('static', filename='logo/drawing.ico') }}" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/micss.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -37,13 +37,43 @@
             <div class="row">
                 <nav>
                     <ul class="fancyNav">
-                        <li id="novedades"><a href="{{ url_for('novedades')}}">Novedades</a></li>
-                        <li id="productos"><a href="#">Productos</a></li>
+                        <li id="tienda"><a href="#">La tienda</a></li>
+                        <li id="noticias"><a href="{{ url_for('noticias')}}">Noticias</a></li>
                         <li id="sobreNosotros"><a href="{{ url_for('sobre_nosotros')}}">¿Quienes somos?</a></li>
                         <li id="contacto"><a href="{{ url_for('contacto')}}">Contacto</a></li>
                     </ul>
                 </nav>
+                <h1>PRODUCTOS MÁS DESTACADOS</h1>
             </div>
+            <div class="row" id="productos">
+                <div class="producto col-sm-3">
+                    <a href="http://pinisan.com/adios-panuelos" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/1.png')}}" alt="img01"><h4>¡Adios pañuelos! 250ml.</h4></a>
+                </div>
+                <div class="producto col-sm-3">
+                    <a href="http://pinisan.com/mas-animo" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/2.png')}}" alt="img02"><h4>Más ánimo 30cap.</h4></a>
+                </div>
+                <div class="producto col-sm-3">
+                    <a href="http://pinisan.com/colageno-hidrolizado-forte" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/3.png')}}" alt="img03"><h4>Colágeno forte 30cap.</h4></a>
+                </div>
+                <div class="producto col-sm-3">
+                    <a href="http://www.salus.es/floradix1" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/4.png')}}" alt="img04"><h4>Floradix 250ml.</h4></a>
+                </div>
+            </div>
+            <div class="row" id="productos">
+                <div class="producto col-sm-3">
+                    <a href="http://www.novadiet.es/index.php/productos/circulatorios-colesterol-y-glucosa/item/525-colestia.html" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/5.png')}}" alt="img05"><h4>Colestia 30cap.</h4></a>
+                </div>
+                <div class="producto col-sm-3">
+                    <a href="http://www.esentialaroms.com/productos2.php?idp=53" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/6.png')}}" alt="img06"><h4>Rosa mosqueta 15ml, 50ml y 100ml</h4></a>
+                </div>
+                <div class="producto col-sm-3">
+                    <a href="http://pinisan.com/pinosan" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/7.png')}}" alt="img07"><h4>Pinosan 250ml.</h4></a>
+                </div>
+                <div class="producto col-sm-3">
+                    <a href="https://www.trepatdiet.com/arboldelteesiaceite100ml/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/8.png')}}" alt="img08"><h4>Aceite arbol del té 10ml.</h4></a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container">

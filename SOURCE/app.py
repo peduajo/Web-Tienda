@@ -7,13 +7,13 @@ import io
 app = Flask(__name__)
 
 
-@app.route('/novedades')
-def novedades():
-	return render_template('novedades.html')
+@app.route('/tienda')
+def tienda():
+	return render_template('tienda.html')
 
-@app.route('/productos')
-def productos():
-	return render_template('productos.html')
+@app.route('/noticias')
+def noticias():
+	return render_template('noticias.html')
 
 @app.route('/sobre_nosotros')
 def sobre_nosotros():

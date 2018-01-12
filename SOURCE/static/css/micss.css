@@ -26,11 +26,7 @@ header a:link{
 }
 
 main{
-	background-color: #44E1E1  ;
-}
-
-main i{
-
+	background-color: #DAF7A6  ;
 }
 
 main h1{
@@ -156,7 +152,7 @@ footer a:link{
     opacity:1;
 }
 
-#productos a,
+#noticias a,
 #sobreNosotros a,
 #contacto a{
     color: #5d5d5d;
@@ -170,7 +166,7 @@ footer a:link{
     white-space:nowrap;
 }
 
-#novedades a{
+#tienda a{
 	color: #5d5d5d;
     display: inline-block;
     font: 20px/1 Lobster,Arial,sans-serif;
@@ -190,4 +186,26 @@ footer a:link{
 .slideMarca{
 	margin-top: 25px;
 	margin-bottom: 25px;
+}
+
+#productos{
+	margin-top: 25px;
+}
+
+.producto h4{
+	font: 14px/1 Lobster,Arial,sans-serif;
+	margin-top: 15px;
+	margin-bottom: 40px;
+}
+
+.producto img{
+	 border:1px solid #AEAE77;
+}
+
+.producto a:link{
+	text-decoration: none;
+}
+
+.producto a{
+	color: black;
 }
