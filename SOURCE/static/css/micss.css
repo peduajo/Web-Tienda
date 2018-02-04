@@ -154,23 +154,12 @@ footer a:link{
 
 #noticias a,
 #sobreNosotros a,
-#contacto a{
+#contacto a,
+#tienda a{
     color: #5d5d5d;
     display: inline-block;
-    font: 20px/1 Lobster,Arial,sans-serif;
+    font: 18px/1 Lobster,Arial,sans-serif;
     padding: 12px 95px 14px;
-    position: relative;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
-    z-index:2;
-    text-decoration:none;
-    white-space:nowrap;
-}
-
-#tienda a{
-	color: #5d5d5d;
-    display: inline-block;
-    font: 20px/1 Lobster,Arial,sans-serif;
-    padding: 12px 95px 14px 0px;
     position: relative;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
     z-index:2;
@@ -196,6 +185,7 @@ footer a:link{
 	font: 14px/1 Lobster,Arial,sans-serif;
 	margin-top: 15px;
 	margin-bottom: 40px;
+	text-align: center;
 }
 
 .producto img{
@@ -208,4 +198,25 @@ footer a:link{
 
 .producto a{
 	color: black;
+}
+
+#myCarousel {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.carousel-control.left {
+  margin-left: -175px;
+}
+
+.carousel-control.right {
+  margin-right: -175px;
+}
+
+.carousel-control{
+	height: 85%;
+}
+
+.carousel-indicators{
+	margin-bottom: -15px;
 }
