@@ -38,7 +38,7 @@
             <div class="row">
                 <nav>
                     <ul class="fancyNav">
-                        <li id="tienda"><a href="#">La tienda</a></li>
+                        <li id="tienda"><a href="#">La Tienda</a></li>
                         <li id="noticias"><a href="{{ url_for('noticias')}}">Salud Natural</a></li>
                         <li id="sobreNosotros"><a href="{{ url_for('sobre_nosotros')}}">¿Quienes somos?</a></li>
                         <li id="contacto"><a href="{{ url_for('contacto')}}">Contacto</a></li>
@@ -54,33 +54,33 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <div class="row" id="productos">
-                                <div class="producto col-sm-3">
+                            <div class="row productos">
+                                <div class="col-sm-3 producto">
                                     <a href="http://pinisan.com/fitopremium-cardo-mariano" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/9.png')}}" alt="img01"><h4>Cardo Mariano 30cap.<br><br> 12.95€</h4></a>
                                 </div>
-                                <div class="producto col-sm-3">
+                                <div class="col-sm-3 producto">
                                     <a href="http://pinisan.com/mas-animo" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/2.png')}}" alt="img02"><h4>Más ánimo 30cap. <br><br> 12.90€</h4></a>
                                 </div>
-                                <div class="producto col-sm-3">
+                                <div class="col-sm-3 producto">
                                     <a href="http://www.tongil.es/savia.html" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/10.png')}}" alt="img03"><h4>Savia Verde 250ml.<br><br> 17.40€</h4></a>
                                 </div>
-                                <div class="producto col-sm-3">
+                                <div class="col-sm-3 producto">
                                     <a href="http://www.salus.es/floradix1" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/4.png')}}" alt="img04"><h4>Floradix 250ml. <br><br> 14.45€</h4></a>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="row" id="productos">
-                                <div class="producto col-sm-3">
+                            <div class="row productos">
+                                <div class="col-sm-3 producto">
                                     <a href="http://pinisan.com/bifidsan" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/11.png')}}" alt="img05"><h4>Bifidsan 30cap.<br><br> 16.50€</h4></a>
                                 </div>
-                                <div class="producto col-sm-3">
+                                <div class="col-sm-3 producto">
                                     <a href="http://www.esentialaroms.com/productos2.php?idp=53" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/6.png')}}" alt="img06"><h4>Aceite Rosa mosqueta 15ml. <br><br> 9.80€</h4></a>
                                 </div>
-                                <div class="producto col-sm-3">
+                                <div class="col-sm-3 producto">
                                     <a href="http://www.salus.es/gastrodiet-comprimidos" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/12.png')}}" alt="img07"><h4>Gastrodiet 40cap.<br><br> 12.85€</h4></a>
                                 </div>
-                                <div class="producto col-sm-3">
+                                <div class="col-sm-3 producto">
                                     <a href="https://www.trepatdiet.com/arboldelteesiaceite100ml/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/8.png')}}" alt="img08"><h4>Aceite arbol del té 25ml. <br><br> 16.40€</h4></a>
                                 </div>
                             </div>
@@ -97,15 +97,18 @@
                 </div>
             </div>
             <h1>Productos de Temporada</h1>
-            <div class="row">
-                <div class="producto col-sm-3">
+            <div class="row more-margin">
+                <div class="col-sm-3 producto">
                     <a href="http://pinisan.com/adios-panuelos" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/1.png')}}" alt="img02"><h4>Adios Pañuelos 250ml.<br><br> 11.75€</h4></a>
                 </div>
-                <div class="producto col-sm-3">
+                <div class="col-sm-3 producto">
                     <a href="http://pinisan.com/pinosan" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/7.png')}}" alt="img01"><h4>Pinosan 250ml.<br><br> 10.90€</h4></a>
                 </div>
-                <div class="producto col-sm-3">
-                    <a href="http://pinisan.com/fitopremium-equinacea " target="_blank"><img src="{{url_for('static',filename='imagenes/productos/13.jpg')}}" alt="img03"><h4>Equinácea 30cap.<br><br> 11.70€</h4></a>
+                <div class="col-sm-3 producto">
+                    <a href="http://pinisan.com/fitopremium-equinacea " target="_blank"><img src="{{url_for('static',filename='imagenes/productos/13.png')}}" alt="img03"><h4>Equinácea 30cap.<br><br> 11.70€</h4></a>
+                </div>
+                <div class="col-sm-3 producto">
+                    <a href="http://www.d-intersa.com/productos2.php?idp=43 " target="_blank"><img src="{{url_for('static',filename='imagenes/productos/14.png')}}" alt="img04"><h4>Leriform 30cap.<br><br> xxxx€</h4></a>
                 </div>
             </div>
         </div>

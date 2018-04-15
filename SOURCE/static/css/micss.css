@@ -26,7 +26,7 @@ header a:link{
 }
 
 main{
-	background-color: #DAF7A6  ;
+	background-color: white  ;
 }
 
 main h1{
@@ -41,6 +41,7 @@ footer{
 	padding: 20px 0;
 	text-align: center;
 	font-family: "Courier New";
+	margin-top: 125px;
 }
 
 footer a:link{
@@ -158,7 +159,7 @@ footer a:link{
 #tienda a{
     color: #5d5d5d;
     display: inline-block;
-    font: 18px/1 Lobster,Arial,sans-serif;
+    font: 19px/1 Lobster,Arial,sans-serif;
     padding: 12px 95px 14px;
     position: relative;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
@@ -177,19 +178,20 @@ footer a:link{
 	margin-bottom: 25px;
 }
 
-#productos{
+.productos{
 	margin-top: 25px;
+	width: 100%;
 }
 
 .producto h4{
-	font: 14px/1 Lobster,Arial,sans-serif;
+	font: 17px/1 Lobster,Arial,sans-serif;
 	margin-top: 15px;
 	margin-bottom: 40px;
 	text-align: center;
 }
 
 .producto img{
-	 border:1px solid #AEAE77;
+	border:1px solid #AEAE77;
 }
 
 .producto a:link{
@@ -201,22 +203,29 @@ footer a:link{
 }
 
 #myCarousel {
-  margin-left: 50px;
-  margin-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .carousel-control.left {
-  margin-left: -175px;
+    margin-left: -110px;
+    width: 10%;
 }
 
 .carousel-control.right {
-  margin-right: -175px;
+    margin-right: -110px;
+    width: 10%;
 }
 
 .carousel-control{
-	height: 85%;
+    height: 67.5%;
+	margin-top: 25px;
 }
 
 .carousel-indicators{
 	margin-bottom: -15px;
+}
+
+.more-margin{
+    margin-top: 50px;
 }
