@@ -47,26 +47,37 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
-                    <h1>Lo Más Saludable Para Tí</h1>
-                    <i>Nuestra opción sobre la salud es incorporar diariamente una alimentación variada y ecológica, acompañada de aquellos complementos que la naturaleza nos brinda y no son agresivos para nuestro organismo. El Herbolario Sol y Tierra abrió por primera vez en 1990, mostrando así nuestra larga experiencia.<br><br>Disponemos de una selección de artículos de calidad y al mejor precio. Aquí podrás encontrar una gran variedad de alimentos ecológicos, suplementos naturales, plantas medicinales y Bio-cosmética terapéutica.</i> 
+                    <h1 id="titulo-sobre-nosotros">Lo Más Saludable Para Tí</h1>
+                    <i class="parrafo">
+                        Nuestra opción sobre la salud es incorporar diariamente una alimentación <br>
+                        variada y ecológica, acompañada de aquellos complementos que la naturaleza <br>
+                        nos brinda y no son agresivos para nuestro organismo. El Herbolario Sol y Tierra <br>
+                        abrió por primera vez en 1990, mostrando así nuestra larga experiencia.
+                        <br><br>Disponemos de una selección de artículos de calidad y al mejor precio.<br>
+                        Aquí podrás encontrar una gran variedad de alimentos ecológicos, suplementos <br>
+                        naturales, plantas medicinales y Bio-cosmética terapéutica.
+                    </i>
                 </div>
                 <div class="col-md-1"></div>
             </div>
             <div class="row">
-                <div class="col-md-12" align="center">
+                <div class="col-md-12" id="imagen-sobre-nosotros">
                     <img id="imagenSobreNosotros" src="{{ url_for('static', filename='imagenes/sobreNosotros1.jpg') }}" width="650" height="350">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
-                    <i>La experiencia durante más de 25 años nos ha llevado a conocer a las mejores marcas del mercado para ofrecer a nuestros clientes</i> 
+                    <i class="parrafo">
+                        La experiencia durante más de 25 años nos ha llevado a conocer a las mejores <br>
+                        marcas del mercado para ofrecer a nuestros clientes.
+                    </i>
                 </div>
                 <div class="col-md-1"></div>
             </div>
             <div class="row">
                 <div class="col-md-12" align="center">
-                    <div class="slider-marcas" style="max-width:750px">
+                    <div class="slider-marcas">
                         <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila1.png')}}" style="width:100%">
                         <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila2.png')}}" style="width:100%">
                         <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila3.png')}}" style="width:100%">

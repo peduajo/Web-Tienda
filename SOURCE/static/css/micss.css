@@ -178,13 +178,19 @@ footer a:link{
 	margin-bottom: 25px;
 }
 
+.slider-marcas{
+    margin-top: 70px;
+    max-width:750px;
+    margin-right: 230px;
+}
+
 .productos{
 	margin-top: 25px;
 	width: 100%;
 }
 
 .producto h4{
-	font: 17px/1 Lobster,Arial,sans-serif;
+    font-family: 'Poiret One', cursive;
 	margin-top: 15px;
 	margin-bottom: 40px;
 	text-align: center;
@@ -226,6 +232,32 @@ footer a:link{
 	margin-bottom: -15px;
 }
 
-.more-margin{
-    margin-top: 50px;
+#destacados{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.parrafo{
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+}
+
+#titulo-sobre-nosotros{
+    margin-bottom: 30px;
+}
+
+#imagen-sobre-nosotros{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 90px;
+}
+
+.ubicaciones{
+    font-family: 'Poiret One', cursive;
+}
+
+.titulo-ubicaciones{
+    margin-bottom: 30px;
+    margin-top: 30px;
 }

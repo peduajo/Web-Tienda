@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/micss.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
@@ -97,7 +98,7 @@
                 </div>
             </div>
             <h1>Productos de Temporada</h1>
-            <div class="row more-margin">
+            <div class="row" id="destacados">
                 <div class="col-sm-3 producto">
                     <a href="http://pinisan.com/adios-panuelos" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/1.png')}}" alt="img02"><h4>Adios Pañuelos 250ml.<br><br> 11.75€</h4></a>
                 </div>
@@ -116,8 +117,8 @@
     <footer>
         <div class="container">
             <div class="col-md-12" align="center">
-                <a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}"/>
-                <a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}"/>
+                <a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}"/></a>
+                <a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}"/></a>
             </div>
         </div>
     </footer>
