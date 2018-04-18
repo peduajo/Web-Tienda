@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sobre Nosotros</title>
-    <link rel="icon" type="image/gif" href="{{ url_for('static', filename='logo/drawing.ico') }}" sizes="16x16" />
+    <link rel="icon" type="image/gif" href="{{ url_for('static', filename='logo/drawing2.ico') }}" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/micss.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
@@ -39,14 +39,14 @@
                     <ul class="fancyNav">
                         <li id="tienda"><a href="{{ url_for('tienda')}}">La tienda</a></li>
                         <li id="noticias"><a href="{{ url_for('noticias')}}">Salud Natural</a></li>
-                        <li id="sobreNosotros"><a href="#">¿Quienes somos?</a></li>
+                        <li id="sobreNosotros"><a href="#">¿Quiénes somos?</a></li>
                         <li id="contacto"><a href="{{ url_for('contacto')}}">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
                     <h1 id="titulo-sobre-nosotros">Lo Más Saludable Para Tí</h1>
                     <i class="parrafo">
                         Nuestra opción sobre la salud es incorporar diariamente una alimentación <br>
@@ -58,31 +58,35 @@
                         naturales, plantas medicinales y Bio-cosmética terapéutica.
                     </i>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-md-2"></div>
             </div>
             <div class="row">
-                <div class="col-md-12" id="imagen-sobre-nosotros">
-                    <img id="imagenSobreNosotros" src="{{ url_for('static', filename='imagenes/sobreNosotros1.jpg') }}" width="650" height="350">
+                <div class="col-md-2"></div>
+                <div class="col-md-8" id="imagen-sobre-nosotros">
+                    <img src="{{ url_for('static', filename='imagenes/sobreNosotros1.jpg') }}" width="650" height="350">
                 </div>
+                <div class="col-md-2"></div>
             </div>
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
                     <i class="parrafo">
                         La experiencia durante más de 25 años nos ha llevado a conocer a las mejores <br>
                         marcas del mercado para ofrecer a nuestros clientes.
                     </i>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-md-2"></div>
             </div>
             <div class="row">
-                <div class="col-md-12" align="center">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
                     <div class="slider-marcas">
-                        <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila1.png')}}" style="width:100%">
-                        <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila2.png')}}" style="width:100%">
-                        <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila3.png')}}" style="width:100%">
+                        <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila1.png')}}">
+                        <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila2.png')}}">
+                        <img class="slideMarca" src="{{ url_for('static', filename='imagenes/marcas/fila3.png')}}">
                     </div>
                 </div>
+                <div class="col-md-2"></div>
             </div>
             <div class="row">
                 <br>
