@@ -207,25 +207,6 @@ footer a:link{
     margin-right: 50px;
 }
 
-.carousel-control.left {
-    margin-left: -110px;
-    width: 10%;
-}
-
-.carousel-control.right {
-    margin-right: -110px;
-    width: 10%;
-}
-
-.carousel-control{
-    height: 63.5%;
-	margin-top: 25px;
-}
-
-.carousel-indicators{
-	margin-bottom: -15px;
-}
-
 #destacados{
     margin-top: 40px;
     margin-left: 20px;
