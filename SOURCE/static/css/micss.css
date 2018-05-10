@@ -188,6 +188,7 @@ footer a:link{
 	margin-top: 15px;
 	margin-bottom: 40px;
 	text-align: center;
+	font-weight: bold;
 }
 
 .producto img{
@@ -216,6 +217,8 @@ footer a:link{
 .parrafo{
     font-family: 'Poiret One', cursive;
     text-align: center;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #titulo-sobre-nosotros{
@@ -229,6 +232,8 @@ footer a:link{
 
 .ubicaciones{
     font-family: 'Poiret One', cursive;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .titulo-ubicaciones{
@@ -237,12 +242,13 @@ footer a:link{
 }
 
 .mySlides {display: none}
+.mySlidesFrame {display: none}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 .slideshow-container a:hover{
@@ -251,44 +257,104 @@ footer a:link{
 
 /* Next & previous buttons */
 .antes, .despues {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: 5%;
-  padding: 10px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  background-color: #bfbaba;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 5%;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: #bfbaba;
+}
+
+.antesFrame, .despuesFrame {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 3%;
+    padding: 10px;
+    margin-top: -22px;
+    color: #bfbaba;
+    font-weight: bold;
+    font-size: 48px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
 
 
 /* Position the "next button" to the right */
 .despues {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.despuesFrame {
+    margin-right: -25px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.antesFrame{
+    margin-left: -55px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .antes:hover, .despues:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dotFrame {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .actived, .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
+}
+
+.actived, .dotFrame:hover {
+    background-color: #717171;
+}
+
+.frame{
+    margin-top: 40px;
+}
+
+main hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color:  #88A95F;
+}
+
+.tituloFrame{
+    font: 23px/1 Lobster,Arial,sans-serif;
+	margin-bottom: 15px;
+	margin-top: 40px;
 }

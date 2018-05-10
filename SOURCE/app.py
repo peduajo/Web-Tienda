@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/tienda')
+@app.route('/')
 def tienda():
 	return render_template('tienda.html')
 

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://360player.io/static/dist/scripts/embed.js" async></script>
 </head>
 <body>
     <header>
@@ -39,7 +39,7 @@
             <div class="row">
                 <nav>
                     <ul class="fancyNav">
-                        <li id="tienda"><a href="#">La Tienda</a></li>
+                        <li id="tienda"><a href="{{ url_for('tienda')}}">La Tienda</a></li>
                         <li id="sobreNosotros"><a href="{{ url_for('sobre_nosotros')}}">¿Quiénes somos?</a></li>
                         <li id="contacto"><a href="{{ url_for('contacto')}}">Contacto</a></li>
                     </ul>
@@ -60,9 +60,7 @@
                         <a class="despues" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="antes" onclick="plusSlides(1)">&#10095;</a>
                     </div>
-
                     <br>
-
                     <div style="text-align:center">
                         <span class="dot" onclick="currentSlide(1)"></span>
                         <span class="dot" onclick="currentSlide(2)"></span>
@@ -104,7 +102,7 @@
                                     <a href="http://pinisan.com/productos-pinisan/bifidsan/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/11.png')}}" alt="img05"><h4>Bifidsan 30cap.<br><br> 16.50€</h4></a>
                                 </div>
                                 <div class="col-sm-3 producto">
-                                    <a href="http://www.esentialaroms.com/productos2.php?idp=53" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/6.png')}}" alt="img06"><h4>Aceite Rosa mosqueta 15ml. <br><br> 9.80€</h4></a>
+                                    <a href="http://www.esentialaroms.com/productos2.php?idp=53" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/6.png')}}" alt="img06"><h4>Rosa mosqueta 15ml. <br><br> 9.80€</h4></a>
                                 </div>
                                 <div class="col-sm-3 producto">
                                     <a href="http://www.salus.es/gastrodiet-comprimidos" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/12.png')}}" alt="img07"><h4>Gastrodiet 40cap.<br><br> 12.85€</h4></a>
@@ -132,6 +130,31 @@
                     <a href="http://www.d-intersa.com/productos2.php?idp=43 " target="_blank"><img src="{{url_for('static',filename='imagenes/productos/14.png')}}" alt="img04"><h4>Leriform 30cap.<br><br> 14.95€</h4></a>
                 </div>
             </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <p class="tituloFrame">Nuestra Tienda</p>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+            <div class="row">
+                <div class="slideshow-container">
+                    <div class="mySlidesFrame">
+                        <iframe class="frame" src="https://360player.io/p/yJ32hT/" frameborder="0" width=1000 height=500 allowfullscreen data-token="yJ32hT"></iframe>
+                    </div>
+                    <div class="mySlidesFrame">
+                        <iframe class="frame" src="https://360player.io/p/S2v5jf/" frameborder="0" width=1000 height=500 allowfullscreen data-token="S2v5jf"></iframe>
+                    </div>
+                    <a class="despuesFrame" onclick="plusSlidesFrames(-1)">&#10095;</a>
+                    <a class="antesFrame" onclick="plusSlidesFrames(1)">&#10094;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dotFrame" onclick="currentSlideFrames(1)"></span>
+                    <span class="dotFrame" onclick="currentSlideFrames(2)"></span>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -144,14 +167,25 @@
     </footer>
     <script>
         var slideIndex = 1;
+        var slideIndexFrame = 1;
+
         showSlides(slideIndex);
+        showSlidesFrames(slideIndexFrame);
 
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
 
+        function plusSlidesFrames(n) {
+            showSlidesFrames(slideIndexFrame += n);
+        }
+
         function currentSlide(n) {
             showSlides(slideIndex = n);
+        }
+
+        function currentSlideFrames(n) {
+            showSlidesFrames(slideIndexFrame = n);
         }
 
         function showSlides(n) {
@@ -168,6 +202,22 @@
             }
             slides[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " actived";
+        }
+
+        function showSlidesFrames(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlidesFrame");
+            var dots = document.getElementsByClassName("dotFrame");
+            if (n > slides.length) {slideIndexFrame = 1}
+            if (n < 1) {slideIndexFrame = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" actived", "");
+            }
+            slides[slideIndexFrame-1].style.display = "block";
+            dots[slideIndexFrame-1].className += " actived";
         }
     </script>
 </body>

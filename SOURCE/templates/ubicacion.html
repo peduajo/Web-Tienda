@@ -6,11 +6,12 @@
     <title>Ubicación</title>
     <link rel="icon" type="image/gif" href="{{ url_for('static', filename='logo/drawing2.ico') }}" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/micss.css') }}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header>
@@ -35,18 +36,18 @@
             	</div>
         	</div>
         	<div class="row">
-            	<nav>
-            		<ul class="fancyNav">
-                		<li id="tienda"><a href="{{ url_for('tienda')}}">La tienda</a></li>
-                		<li id="sobreNosotros"><a href="{{ url_for('sobre_nosotros')}}">¿Quiénes somos?</a></li>
-                		<li id="contacto"><a href="#">Contacto</a></li>
-            		</ul>
-        		</nav>
-        	</div>
+                <nav>
+                    <ul class="fancyNav">
+                        <li id="tienda"><a href="{{ url_for('tienda')}}">La Tienda</a></li>
+                        <li id="sobreNosotros"><a href="{{ url_for('sobre_nosotros')}}">¿Quiénes somos?</a></li>
+                        <li id="contacto"><a href="{{ url_for('contacto')}}">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         	<div class="row">
 				<div class="col-md-1"></div>
         		<div class="col-md-10">
-        			<h1 class="titulo-ubicaciones">Donde Encontrarnos</h1>
+        			<h1 class="titulo-ubicaciones">Dónde Encontrarnos</h1>
         			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7166.282701375344!2d-3.937925724729594!3d38.984740067787115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6bc314bb5c5a0f%3A0xb13ac2a9ad8f70dd!2sHerbolario+Sol+y+Tierra!5e0!3m2!1ses!2ses!4v1513373334648" width="825" height="450" frameborder="0" style="border:0;margin-bottom: 30px" allowfullscreen></iframe>
         		</div>
 				<div class="col-md-1"></div>
