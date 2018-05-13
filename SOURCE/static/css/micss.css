@@ -37,7 +37,7 @@ main h1{
 }
 
 main .container{
-    min-width: 1200px;
+    width: 1200px  !important;
 }
 
 footer{
@@ -164,8 +164,8 @@ footer a:link{
 #contacto a{
     color: #5d5d5d;
     display: inline-block;
-    font: 19px/1 Lobster,Arial,sans-serif;
-    padding: 12px 140px 14px;
+    font: 21px/1 Lobster,Arial,sans-serif;
+    padding: 14px 140px 14px;
     position: relative;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
     z-index:2;
@@ -198,7 +198,7 @@ footer a:link{
 }
 
 .producto img{
-	border:1px solid #AEAE77;
+	border:3px solid #AEAE77;
 }
 
 .producto a:link{
