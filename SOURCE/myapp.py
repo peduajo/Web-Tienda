@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template, make_response
 
 app = Flask(__name__)
 
@@ -13,6 +13,13 @@ def sobre_nosotros():
 @app.route('/contacto')
 def contacto():
     return render_template('ubicacion.html')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    template = render_template('sitemap.xml')
+    response = make_response(template)
+    response.headers['Content-Type'] = 'application/xml'
+    return response
 
 if __name__=="__main__":
     app.run(threaded=True)
