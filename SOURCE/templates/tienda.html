@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Herbolario Sol y Tierra</title>
+    <meta name="description" content="El Herbolario de Ciudad Real. Centrado en la alimentación Ecológica, el control de peso, alimentación sin gluten e integral. También para veganos y cosmética natural." />
     <link rel="icon" type="image/gif" href="{{ url_for('static', filename='logo/drawing2.ico') }}" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/micss.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,12 +19,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-6" align="center">
-                    <img src="{{ url_for('static', filename='imagenes/telefonoWeb.png') }}">
+                    <img src="{{ url_for('static', filename='imagenes/telefonoWeb.png') }}" alt="teléfono herbolario Ciudad Real">
                     <b id="telefono">  926 21 13 98</b>
                 </div>
                 <div class="col-xs-6" align="center">
-                    <a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}"/></a>
-                    <a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}"/></a>
+                    <a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}" alt="Facebook icon"/></a>
+                    <a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}" alt="Instagram icon"/></a>
                 </div>
             </div>
         </div>
@@ -32,7 +33,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12" align="center">
-                    <img id="logoTienda" src="{{ url_for('static', filename='logo/drawing.png') }}"  width="200" height="200">
+                    <img id="logoTienda" src="{{ url_for('static', filename='logo/drawing.png') }}"  width="200" height="200" alt="Logo Herbolario Sol y Tierra">
                 </div>
             </div>
             <div class="row">
@@ -48,13 +49,13 @@
                 <div class="col-xs-8">
                     <div class="slideshow-container">
                         <div class="mySlides">
-                            <a href="https://www.novadiet.es/index.php/productos/circulatorios-colesterol-y-glucosa/item/525-colestia.html" target="_blank"><img src="{{ url_for('static', filename='imagenes/anuncios/anuncio1.png') }}" style="width:100%"></a>
+                            <a href="https://www.novadiet.es/index.php/productos/circulatorios-colesterol-y-glucosa/item/525-colestia.html" target="_blank"><img src="{{ url_for('static', filename='imagenes/anuncios/anuncio1.png') }}" style="width:100%" alt="Colestia"></a>
                         </div>
                         <div class="mySlides">
-                            <a href="http://pinisan.com/productos-pinisan/colageno-hidrolizado-forte/" target="_blank"><img src="{{ url_for('static', filename='imagenes/anuncios/anuncio2.png') }}" style="width:100%"></a>
+                            <a href="http://pinisan.com/productos-pinisan/colageno-hidrolizado-forte/" target="_blank"><img src="{{ url_for('static', filename='imagenes/anuncios/anuncio2.png') }}" style="width:100%" alt="Colágeno hidrolizado forte"></a>
                         </div>
                         <div class="mySlides">
-                            <a href="http://www.solgarsuplementos.es/nav/productos/productos/p_SuplementosEspeciales/Pelo_Piel_Unas_Comprimidos.html" target="_blank"><img src="{{ url_for('static', filename='imagenes/anuncios/anuncio3.png') }}" style="width:100%"></a>
+                            <a href="http://www.solgarsuplementos.es/nav/productos/productos/p_SuplementosEspeciales/Pelo_Piel_Unas_Comprimidos.html" target="_blank"><img src="{{ url_for('static', filename='imagenes/anuncios/anuncio3.png') }}" style="width:100%" alt="Fórmula Pelo, piel y uñas Comprimidos"></a>
                         </div>
                         <a class="despues" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="antes" onclick="plusSlides(1)">&#10095;</a>
@@ -68,10 +69,10 @@
                 </div>
                 <div class="col-xs-4">
                     <div class="row" style="margin-left: 12px">
-                        <img src="{{ url_for('static', filename='imagenes/anuncios/anuncio4.png') }}">
+                        <img src="{{ url_for('static', filename='imagenes/anuncios/anuncio4.png') }}" alt="más de 25 años de experiencia">
                     </div>
                     <div class="row" style="margin-left: 12px; margin-top: 50px">
-                        <img src="{{ url_for('static', filename='imagenes/anuncios/anuncio5.png') }}">
+                        <img src="{{ url_for('static', filename='imagenes/anuncios/anuncio5.png') }}" alt="atención personalizada">
                     </div>
                 </div>
             </div>
@@ -82,32 +83,48 @@
                         <div class="item active">
                             <div class="row productos">
                                 <div class="col-xs-3 producto">
-                                    <a href="http://pinisan.com/D/product/fitopremium-cardo-mariano/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/9.png')}}" alt="img01"><h4>Cardo Mariano 30cap.<br><br> 12.95€</h4></a>
+                                    <a href="http://pinisan.com/productos-pinisan/mas-animo/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/destacados/1.png')}}" alt="Más ánimo"><h4>Más ánimo 30cap.<br><br> 12'90€</h4></a>
                                 </div>
                                 <div class="col-xs-3 producto">
-                                    <a href="http://pinisan.com/productos-pinisan/mas-animo/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/2.png')}}" alt="img02"><h4>Más ánimo 30cap. <br><br> 12.90€</h4></a>
+                                    <a href="http://www.esentialaroms.com/productos2.php?idp=53" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/destacados/2.png')}}" alt="Rosa mosqueta"><h4>Rosa mosqueta 50ml.<br><br> 15'90€</h4></a>
                                 </div>
                                 <div class="col-xs-3 producto">
-                                    <a href="http://www.tongil.es/savia.html" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/10.png')}}" alt="img03"><h4>Savia Verde 250ml.<br><br> 17.40€</h4></a>
+                                    <a href="https://www.trepatdiet.com/arboldelteesiaceite100ml/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/destacados/3.png')}}" alt="Aceite árbol del té"><h4>Aceite árbol del té 25ml.<br><br> 16'40€</h4></a>
                                 </div>
                                 <div class="col-xs-3 producto">
-                                    <a href="http://www.salus.es/floradix1" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/4.png')}}" alt="img04"><h4>Floradix 250ml. <br><br> 14.45€</h4></a>
+                                    <a href="http://pinisan.com/D/product/fitopremium-cardo-mariano/" target="_blank"><img src="/static/imagenes/productos/destacados/4.png" alt="Fitopremium cardo mariano"><h4>Cardo Mariano 30cap.<br><br> 12.95€</h4></a>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row productos">
                                 <div class="col-xs-3 producto">
-                                    <a href="http://pinisan.com/productos-pinisan/bifidsan/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/11.png')}}" alt="img05"><h4>Bifidsan 30cap.<br><br> 16.50€</h4></a>
+                                    <a href="http://www.tongil.es/savia.html" target="_blank"><img src="/static/imagenes/productos/destacados/5.png" alt="Savia"><h4>Savia Verde 250ml.<br><br> 17.40€</h4></a>
                                 </div>
                                 <div class="col-xs-3 producto">
-                                    <a href="http://www.esentialaroms.com/productos2.php?idp=53" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/6.png')}}" alt="img06"><h4>Rosa mosqueta 50ml. <br><br> 15.90€</h4></a>
+                                    <a href="http://pinisan.com/productos-pinisan/bifidsan/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/destacados/6.png')}}" alt="Bifidsan"><h4>Bifidsan 30cap.<br><br> 16'50€</h4></a>
                                 </div>
                                 <div class="col-xs-3 producto">
-                                    <a href="http://www.salus.es/gastrodiet-comprimidos" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/12.png')}}" alt="img07"><h4>Gastrodiet 40cap.<br><br> 12.85€</h4></a>
+                                    <a href="http://www.salus.es/gastrodiet-comprimidos" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/destacados/7.png')}}" alt="Gastrodiet"><h4>Gastrodiet 40cap.<br><br> 13'10€</h4></a>
                                 </div>
                                 <div class="col-xs-3 producto">
-                                    <a href="https://www.trepatdiet.com/arboldelteesiaceite100ml/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/8.png')}}" alt="img08"><h4>Aceite arbol del té 25ml. <br><br> 16.40€</h4></a>
+                                    <a href="https://www.eladiet.com/es/producto/PA.SUE.BNO/indicaciones/10" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/destacados/8.png')}}" alt="Buenas noches comprimidos"><h4>Buenas Noches 30cap.<br><br> 9'60€</h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row productos">
+                                <div class="col-xs-3 producto">
+                                    <a href="http://tongil.es/estado-puro/productos/maca-2000-mg/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/destacados/9.png')}}" alt="Maca 2000mg"><h4>Maca 2000mg.<br><br> 22'30€</h4></a>
+                                </div>
+                                <div class="col-xs-3 producto">
+                                    <a href="http://www.sorianatural.es/es/soria-natural/productos/P136/32/2/fost-print-sport" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/destacados/10.png')}}" alt="Fost Print Sport"><h4>Fost Print Sport 300ml.<br><br> 23'40€</h4></a>
+                                </div>
+                                <div class="col-xs-3 producto">
+                                    <a href="http://tongil.es/estado-puro/productos/ginkgo-6500mg/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/destacados/11.png')}}" alt="Gingko"><h4>Ginkgo 6500mg.<br><br> 15'90€</h4></a>
+                                </div>
+                                <div class="col-xs-3 producto">
+                                    <a href="http://pinisan.com/productos-pinisan/minera-ferrum-forte/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/destacados/12.png')}}" alt="Minera Ferrum Forte"><h4>Minera Ferrum Forte 30cap.<br><br> 14'95€</h4></a>
                                 </div>
                             </div>
                         </div>
@@ -117,16 +134,16 @@
             <h1>Productos de Temporada</h1>
             <div class="row" id="destacados">
                 <div class="col-xs-3 producto">
-                    <a href="http://pinisan.com/productos-pinisan/adios-panuelos/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/1.png')}}" alt="img02"><h4>Adios Pañuelos 250ml.<br><br> 11.75€</h4></a>
+                    <a href="http://www.d-intersa.com/productos2.php?idp=43" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/temporada/1.png')}}" alt="Leriform"><h4>Leriform 30cap.<br><br> 14'95€</h4></a>
                 </div>
                 <div class="col-xs-3 producto">
-                    <a href="http://pinisan.com/productos-pinisan/pinosan/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/7.png')}}" alt="img01"><h4>Pinosan 250ml.<br><br> 10.90€</h4></a>
+                    <a href="http://tongil.es/ginseng.html" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/temporada/2.png')}}" alt="Ginseng cápsulas"><h4>Ginseng 50cap.<br><br> 30'70€</h4></a>
                 </div>
                 <div class="col-xs-3 producto">
-                    <a href="http://pinisan.com/productos-pinisan/fitopremium-equinacea/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/13.png')}}" alt="img03"><h4>Equinácea 30cap.<br><br> 11.70€</h4></a>
+                    <a href="http://pinisan.com/productos-pinisan/dren/" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/temporada/3.png')}}" alt="Dren 250ml"><h4>Dren 250ml.<br><br> 12'50€</h4></a>
                 </div>
                 <div class="col-xs-3 producto">
-                    <a href="http://www.d-intersa.com/productos2.php?idp=43 " target="_blank"><img src="{{url_for('static',filename='imagenes/productos/14.png')}}" alt="img04"><h4>Leriform 30cap.<br><br> 14.95€</h4></a>
+                    <a href="http://www.sorianatural.es/es/soria-natural/productos/P4412/129/2/vit-min-35-quemadose" target="_blank"><img src="{{url_for('static',filename='imagenes/productos/temporada/4.png')}}" alt="Vit&Min 35 Quemadose"><h4>Vit-Min 35 30cap.<br><br> 17'70€</h4></a>
                 </div>
             </div>
             <hr>
@@ -159,8 +176,8 @@
     <footer>
         <div class="container">
             <div class="col-xs-12" align="center">
-                <a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}"/></a>
-                <a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}"/></a>
+                <a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}" alt="Facebook icon"/></a>
+                <a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}" alt="Instagram icon"/></a>
             </div>
         </div>
     </footer>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Herbolario Sol y Tierra</title>
+	<meta name="description" content="El Herbolario de Ciudad Real. Conoce donde nos encontramos y cuando abrimos."/>
     <link rel="icon" type="image/gif" href="{{ url_for('static', filename='logo/drawing2.ico') }}" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/micss.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,12 +18,12 @@
 		<div class="container">
 			<div class="row">
             	<div class="col-xs-6" align="center">
-                	<img src="{{ url_for('static', filename='imagenes/telefonoWeb.png') }}">
+                	<img src="{{ url_for('static', filename='imagenes/telefonoWeb.png') }}" alt="teléfono herbolario Ciudad Real">
                 	<b id="telefono">  926 21 13 98</b>
             	</div>
             	<div class="col-xs-6" align="center">
-                	<a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}"/></a>
-                	<a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}"/></a>
+                	<a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}" alt="Facebook icon"/></a>
+                	<a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}" alt="Instagram icon"/></a>
             	</div>
         	</div>
 		</div>
@@ -31,7 +32,7 @@
 		<div class="container">
     		<div class="row">
             	<div class="col-xs-12" align="center">
-                	<img id="logoTienda" src="{{ url_for('static', filename='logo/drawing.png') }}"  width="200" height="200">
+                	<img id="logoTienda" src="{{ url_for('static', filename='logo/drawing.png') }}"  width="200" height="200" alt="Logo Herbolario Sol y Tierra">
             	</div>
         	</div>
         	<div class="row">
@@ -71,8 +72,8 @@
 	<footer>
 		<div class="container">
 	  		<div class="col-xs-12" align="center">
-                <a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}"/></a>
-                <a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}"/></a>
+                <a href="https://www.facebook.com/herbolarioenciudadreal/" target="_blank" ><img src="{{ url_for('static', filename='imagenes/facebook.png') }}" alt="Facebook icon"/></a>
+                <a href="https://www.instagram.com/hsolytierra/?hl=es" target="_blank"><img src="{{ url_for('static', filename='imagenes/instagram.png') }}" alt="Instagram icon"/></a>
             </div>
 	  	</div>
 	</footer>
